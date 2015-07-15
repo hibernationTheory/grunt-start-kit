@@ -9,7 +9,7 @@ grunt.config('browserify', {
 	},
 	dist: {
 		files: {
-			'<%= dist_js_path %>app_browserify.js': ['<%= src_js_path %>app.js'],
+			'<%= dist_js_path %>app_browserify.js': ['<%= dist_js_path %>app.js'],
 		},
 	},
 });
