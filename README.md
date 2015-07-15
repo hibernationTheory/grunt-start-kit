@@ -11,3 +11,9 @@
 
 inspired by:
 https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb
+
+### useful links
+
+- instrumental in getting babel / browserify to work:
+https://github.com/babel/babelify
+https://www.npmjs.com/package/grunt-browserify
