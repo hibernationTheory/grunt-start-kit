@@ -40,6 +40,7 @@ Thumbs.db
 .build
 .temp
 dist
+__backup__
 
 #ignore node_modules folder
 node_modules
