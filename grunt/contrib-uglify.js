@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 grunt.config('uglify', {
 		my_target: {
 			files: {
-				'<%= dest_js_path %>output.min.js':['app/*.js', '<%= source_js_path %>*.js']
+				'<%= dist_js_path %>output.min.js':['app/*.js', '<%= src_js_path %>*.js']
 			}
 		}
 	});
