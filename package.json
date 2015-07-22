@@ -9,6 +9,7 @@
   "author": "CHANGE-ME",
   "license": "ISC",
   "devDependencies": {
+    "assemble": "^0.4.42",
     "babelify": "^6.1.3",
     "browserify": "^10.2.6",
     "grunt": "^0.4.5",

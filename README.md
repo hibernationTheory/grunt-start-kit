@@ -15,6 +15,10 @@
 - the file structure includes a module template which you can base your projects on.
 - Includes babel, babelify and browserify to be able to make use of js modules.
 
+#### Assemble
+
+Assemble works with the files under the template folder and creates static html files from the handlebar layout, page and partials that are found under that folder. Just place your files under there, subfolders are allowed.
+
 ### to get started
 - adjust your package.json (change the 'CHANGE-ME' sections)
 - install and configure more plugins as necessary.
