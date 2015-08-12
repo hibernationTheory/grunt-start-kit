@@ -4,10 +4,11 @@
 - This is a start kit (a scaffold) for using Grunt with your project. It provides you with a directory structure with plenty of useful Grunt plugins ready to be installed (npm install) and structured in a way that makes it easy to scale your project. The structure is built in a way that separates each indiviual Grunt plugin into it's own file. (inside the folder: /grunt/). So you have a clear separation of Grunt plugin setup and content from the master Grunt config file allowing for a more modular setup.
 
 The Grunt plugins that are installed so far are:
-- assemble.js : Allows for easy compiling of handlebar files into corresponding html elements. Templating for the win.
-- browserify.js : To use modules in your JS. It also uses 'babelify' to make use of this transpiler (allows you to use ES6 features in JS)
+- assemble : Allows for easy compiling of handlebar files into corresponding html elements. Templating for the win.
+- browserify : To use modules in your JS. It also uses 'babelify' to make use of this transpiler (allows you to use ES6 features in JS)
 - contrib-copy: To copy the contents of a dir from one location to next. To be able to create a separation in between your source and distribution directory (which would include code in a different state like uglified, etc...).
 - contrib-sass: Convert your sass into scss
+- clean: deletes the 'dist' folder. Has a separate task to call with. 
 - text-replace: Replace target string(s) in src files with target values.
 - watch: Watch for changes in a specific dir and launch a task if change happens.
 

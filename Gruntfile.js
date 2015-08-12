@@ -43,12 +43,16 @@ module.exports = function(grunt) {
 	// task setup
 	grunt.registerTask('build', 'Build site files for testing or deployment.', 
 		[
-		'assemble', /* Compile the handlebar stuff */
-		'copy', /* Copy the results over to target dir */
-		'sass', /* convert your sass into scss */
-		'browserify', /* Expand the modules using babel */
-		'replace', /* Replace target value in your files with destionation value in dist folder */
-		'watch' /* Watch for changes in a specific dir and launch a task if change happens */
+			'assemble', /* Compile the handlebar stuff */
+			'copy', /* Copy the results over to target dir */
+			'sass', /* Convert your sass into scss */
+			'browserify', /* Expand the modules using babel */
+			'replace', /* Replace target value in your files with destionation value in dist folder */
+			'watch' /* Watch for changes in a specific dir and launch a task if change happens */
+		]);
+	grunt.registerTask('empty', 'To get rid of the build folder.' ,
+		[
+			'clean' /* Remove the build folder */
 		]);
 	//grunt.registerTask('default', ['uglify']);
 };
