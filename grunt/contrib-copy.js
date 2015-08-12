@@ -1,3 +1,5 @@
+/* copies files in a given dir to a target dir */
+
 module.exports = function(grunt) {
 grunt.config('copy', {
 	main: {

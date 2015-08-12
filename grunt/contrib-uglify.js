@@ -1,3 +1,5 @@
+/* as the name suggests */
+
 module.exports = function(grunt) {
 grunt.config('uglify', {
 		my_target: {

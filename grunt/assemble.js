@@ -1,3 +1,5 @@
+/* assemble allows you to compile handlebar partials into their corresponding html elements */
+
 module.exports = function(grunt) {
 grunt.config('assemble', {
 	options: {
