@@ -28,10 +28,11 @@ module.exports = function(grunt) {
 	// task setup
 	grunt.registerTask('build', 'Build site files for testing or deployment.', 
 		[
-		'assemble', /* compile the handlebar stuff */
-		'copy', /* copy the results over to target dir */
-		'browserify', /* expand the modules using babel */
-		'replace' /* replace target value in your files with destionation value in dist folder */
+		'assemble', /* Compile the handlebar stuff */
+		'copy', /* Copy the results over to target dir */
+		'browserify', /* Expand the modules using babel */
+		'replace', /* Replace target value in your files with destionation value in dist folder */
+		'watch' /* Watch for changes in a specific dir and launch a task if change happens */
 		]);
 	//grunt.registerTask('default', ['uglify']);
 };
