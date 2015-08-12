@@ -30,7 +30,8 @@ module.exports = function(grunt) {
 		[
 		'assemble', /* compile the handlebar stuff */
 		'copy', /* copy the results over to target dir */
-		'browserify' /* expand the modules using babel */
+		'browserify', /* expand the modules using babel */
+		'replace' /* replace target value in your files with destionation value in dist folder */
 		]);
 	//grunt.registerTask('default', ['uglify']);
 };
