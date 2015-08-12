@@ -17,7 +17,7 @@ grunt.config('browserify', {
 	},
 });
 
-grunt.loadNpmTasks('grunt-browserify');
+grunt.loadNpmTasks('grunt-browserify');  // enter the full plugin name here (as it is in package.json)
 
 };
     

@@ -24,6 +24,6 @@ grunt.config('assemble', {
   }
 });
 
-grunt.loadNpmTasks('assemble');
+grunt.loadNpmTasks('assemble');  // enter the full plugin name here (as it is in package.json)
 
 };

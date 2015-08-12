@@ -10,7 +10,7 @@ grunt.config('copy', {
 	},
 });
 
-grunt.loadNpmTasks('grunt-contrib-copy');
+grunt.loadNpmTasks('grunt-contrib-copy');  // enter the full plugin name here (as it is in package.json)
 
 };
 
