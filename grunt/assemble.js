@@ -5,7 +5,7 @@ grunt.config('assemble', {
 	options: {
     flatten: true,
     //data: [
-    //  '<%= src %>/data/*.json'
+    //  '<%= src_path %>/data/*.json'
     //],
     partials: [
       '<%= src_templates_partials_path %>**/*.hbs'
