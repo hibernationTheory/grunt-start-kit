@@ -41,6 +41,7 @@ Thumbs.db
 .temp
 dist
 __backup__
+.sass-cache/
 
 #ignore node_modules folder
 node_modules
