@@ -6,16 +6,24 @@ var dist_path = 'dist/';
 var src_js_path = src_path + 'static/js/';
 var dist_js_path = dist_path + 'static/js/';
 
+/* CSS RELATED */
 var src_styles_path = 'src/static/styles';
 var src_styles_sass_path = 'src/static/styles/sass';
 var src_styles_css_path = 'src/static/styles/css';
 var dist_styles_path = 'dist/static/styles';
 var dist_styles_sass_path = 'dist/static/styles/sass';
 var dist_styles_css_path = 'dist/static/styles/css';
+/* CSS RELATED END */
 
+/* ASSEMBLE RELATED */ 
 var src_templates_path = src_path + 'templates/layout';
 var src_templates_pages_path = src_path + 'templates/pages/';
 var src_templates_partials_path = src_path + 'templates/partials/';
+/* ASSEMBLE RELATED END */
+
+/* OTHER */
+var port = 8000;
+/* OTHER END */
 
 module.exports = function(grunt) {
 	grunt.initConfig({
@@ -31,10 +39,12 @@ module.exports = function(grunt) {
 		'dist_styles_path':dist_styles_path,
 		'dist_styles_sass_path':dist_styles_sass_path,
 		'dist_styles_css_path':dist_styles_css_path,
-		/* HTML RELATED */
+		/* ASSEMBLE RELATED */
 		'src_templates_path':src_templates_path,
 		'src_templates_pages_path':src_templates_pages_path,
 		'src_templates_partials_path':src_templates_partials_path,
+		/* OTHER */
+		'port':port,
 		pkg:require('./package.json')
 	});
 
@@ -43,12 +53,14 @@ module.exports = function(grunt) {
 	// task setup
 	grunt.registerTask('build', 'Build site files for testing or deployment.', 
 		[
+			'connect', /* Startup a static web server */
 			'assemble', /* Compile the handlebar stuff */
 			'copy', /* Copy the results over to target dir */
 			'sass', /* Convert your sass into scss */
 			'browserify', /* Expand the modules using babel */
 			'replace', /* Replace target value in your files with destionation value in dist folder */
 			'watch' /* Watch for changes in a specific dir and launch a task if change happens */
+
 		]);
 	grunt.registerTask('empty', 'To get rid of the build folder.' ,
 		[
