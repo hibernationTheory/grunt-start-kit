@@ -6,6 +6,7 @@
 The Grunt plugins that are installed so far are:
 - assemble : Allows for easy compiling of handlebar files into corresponding html elements. Templating for the win.
 - browserify : To use modules in your JS. It also uses 'babelify' to make use of this transpiler (allows you to use ES6 features in JS)
+- connect-livereload : livereload functionality (TODO - needs to be more descriptive)
 - contrib-connect: Launches a static web server on the port designated by the corresponding variable.
 - contrib-copy: To copy the contents of a dir from one location to next. To be able to create a separation in between your source and distribution directory (which would include code in a different state like uglified, etc...).
 - contrib-sass: Convert your sass into scss
