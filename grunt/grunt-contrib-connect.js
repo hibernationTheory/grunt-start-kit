@@ -11,7 +11,7 @@ grunt.config('connect', {
 				hostname: '<%= url %>',
 				base: '<%= dist_path %>'
 	      	},
-	      	dev: {
+	      	build: {
 	      		options:{
 		      		middleware: function (connect) {
 						return [

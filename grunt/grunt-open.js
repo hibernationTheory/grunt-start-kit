@@ -1,12 +1,11 @@
-/* launches the browser and the specified url */
+/* launches the desired browser and the specified url */
 /* source: https://github.com/jsoverson/grunt-open */
 
 module.exports = function(grunt) {
 grunt.config('open', {
-	open : {
-		dev : {
-			path: '<%= url %>:<%= port %>',
-			app: 'Google Chrome'
+		build : {
+			path: '<%= url %>:<%= port %>/<%= dist_path %>',
+			app: '<%= browser %>'
 		},
 		/* example 
 		build : {
@@ -22,7 +21,6 @@ grunt.config('open', {
 			} 
 		}
 		*/
-	}
 });
 
 grunt.loadNpmTasks('grunt-open'); // enter the full plugin name here (as it is in package.json)

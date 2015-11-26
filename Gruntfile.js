@@ -23,7 +23,8 @@ var src_templates_partials_path = src_path + 'templates/partials/';
 
 /* OTHER */
 var port = 8000;
-var url = 'localhost';
+var url = 'http://localhost';
+var browser = 'Google Chrome'
 /* OTHER END */
 
 module.exports = function(grunt) {
@@ -47,6 +48,7 @@ module.exports = function(grunt) {
 		/* OTHER */
 		'port':port,
 		'url':url,
+		'browser':browser,
 		pkg:require('./package.json')
 	});
 
