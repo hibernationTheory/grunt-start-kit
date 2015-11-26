@@ -1,4 +1,4 @@
-/* triggers a task when a change is detected at specified folder */
+/* start up a static web server, contains livereload as a middleware */
 /* source: https://github.com/gruntjs/grunt-contrib-connect */
 /* source for connect livereload middleware : https://github.com/intesso/connect-livereload */
 
@@ -8,7 +8,7 @@ grunt.config('connect', {
 	    server: {
 			options: {
 				port: '<%= port %>',
-				hostname: 'localhost',
+				hostname: '<%= url %>',
 				base: '<%= dist_path %>'
 	      	},
 	      	dev: {

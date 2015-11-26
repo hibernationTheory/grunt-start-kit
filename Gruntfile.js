@@ -23,6 +23,7 @@ var src_templates_partials_path = src_path + 'templates/partials/';
 
 /* OTHER */
 var port = 8000;
+var url = 'localhost';
 /* OTHER END */
 
 module.exports = function(grunt) {
@@ -45,6 +46,7 @@ module.exports = function(grunt) {
 		'src_templates_partials_path':src_templates_partials_path,
 		/* OTHER */
 		'port':port,
+		'url':url,
 		pkg:require('./package.json')
 	});
 
@@ -54,6 +56,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', 'Build site files for testing or deployment.', 
 		[
 			'connect', /* Startup a static web server */
+			'open', /* open the server */
 			'assemble', /* Compile the handlebar stuff */
 			'copy', /* Copy the results over to target dir */
 			'sass', /* Convert your sass into scss */
